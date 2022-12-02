@@ -48,14 +48,14 @@ function App() {
           </div>
         </div>
 
-        <div class="sky">
-          <div className="row z bold">
-            <div>
+        <div id="animation">
+          <div className="row z bold sky">
+            <div className="mb-100">
               Sunrise <div>9:44 AM</div>
             </div>
 
-            <div>
-              Sunset
+            <div className="mb-100">
+              Sundown
               <div>5:22 PM</div>
             </div>
           </div>

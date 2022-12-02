@@ -107,6 +107,11 @@ h1 {
   color: white;
   font-size: 32px;
   opacity: 0.6;
+  height: 50vh;
+}
+
+.row.z {
+  height: 50vh;
 }
 
 .row {
@@ -201,11 +206,11 @@ body.pause {
 
 .sky {
   width: 100vw;
-  height: 600px;
+  height: 40vh;
   position: fixed;
-  top: 350px;
+  top: 373 px;
   left: 0;
-  max-height: 600px;
+
   overflow: hidden;
 
   height: 25vh;
@@ -224,8 +229,7 @@ body.pause {
 .sky__dawn {
   background: linear-gradient(
     0deg,
-    rgba(24, 126, 228, 0.4) 0%,
-    rgba(24, 126, 228, 0.4) 10%
+    /* rgba(24, 126, 228, 0.2) 10%, */ /* rgba(24, 126, 228, 0.2) 20% */
   );
   animation: linear dawn infinite var(--animation-speed);
 }
@@ -241,8 +245,7 @@ body.pause {
 .sky__dusk {
   background: linear-gradient(
     0deg,
-    rgba(255, 32, 110, 0.2) 15%,
-    rgba(24, 126, 228, 0.4) 30%
+    /* rgba(255, 32, 110, 0.2) 25%, */ /* rgba(24, 126, 228, 0.2) 15% */
   );
   animation: linear dusk infinite var(--animation-speed);
 }
@@ -268,6 +271,7 @@ body.pause {
   .sky {
     max-height: 600px;
   }
+
   .orbit {
     width: 700px;
     height: 700px;
@@ -360,4 +364,14 @@ body.pause {
 
 .pause .playing {
   display: none;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+#animation {
+  top: 373px;
+
+  width: 100%;
 }
