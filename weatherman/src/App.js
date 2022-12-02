@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { fromUnixTime } from "date-fns";
 
 function App() {
   const [data, setData] = useState({});
@@ -16,6 +17,12 @@ function App() {
       setLocation("");
     }
   };
+
+  // let dateup = fromUnixTime(data.sys.sunrise);
+  // let datedown = fromUnixTime(data.sys.sunset);
+
+  // {dateup.toLocaleTimeString().slice(0, 4)}
+  // {datedown.toLocaleTimeString().slice(0, 4)
 
   return (
     <div className="App">
@@ -41,14 +48,32 @@ function App() {
           </div>
         </div>
 
-        <div className="middle">
-          <h4>sunrise</h4>
-          <div className="row">
-            <div>{data.sys.sunrise}</div>
-            <div>sundown</div>
+        <div class="sky">
+          <div className="row z bold">
+            <div>
+              Sunrise <div>9:44 AM</div>
+            </div>
+
+            <div>
+              Sunset
+              <div>5:22 PM</div>
+            </div>
+          </div>
+          <div class="sky__phase sky__dawn"></div>
+          <div class="sky__phase sky__noon"></div>
+          <div class="sky__phase sky__dusk"></div>
+          <div class="sky__phase sky__midnight">
+            <div id="sky__stars"></div>
+          </div>
+          <div class="orbit">
+            <div class="sun"></div>
+            <div class="moon"></div>
           </div>
         </div>
 
+        {/* <div className="middle bold">
+          
+        </div> */}
         {data.name != undefined && (
           <div className="bottom">
             <div className="feels">
