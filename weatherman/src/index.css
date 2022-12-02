@@ -111,7 +111,7 @@ h1 {
 }
 
 .row.z {
-  height: 50vh;
+  height: 37vh;
 }
 
 .row {
@@ -372,6 +372,6 @@ body.pause {
 
 #animation {
   top: 373px;
-
+  height: 40vh;
   width: 100%;
 }
