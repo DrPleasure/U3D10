@@ -51,7 +51,7 @@ function App() {
         {data.name != undefined && (
           <div id="animation">
       
-            </div>
+            
             <div class="sky__phase sky__dawn"></div>
             <div class="sky__phase sky__noon"></div>
             <div class="sky__phase sky__dusk"></div>
