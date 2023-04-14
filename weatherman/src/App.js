@@ -50,15 +50,7 @@ function App() {
 
         {data.name != undefined && (
           <div id="animation">
-          //  <div className="row z bold sky">
-           //   <div className="mb-100">
-           //     Sunrise <div>9:44 AM</div>
-            //  </div>
-
-             // <div className="mb-100">
-              //  Sundown
-               // <div>5:22 PM</div>
-            //  </div>
+      
             </div>
             <div class="sky__phase sky__dawn"></div>
             <div class="sky__phase sky__noon"></div>
